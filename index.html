@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dark Classic Dock Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Dark • Classic • Minimal</h1>
+      <p>A completely different navigation: a bottom dock built with pure HTML & CSS.</p>
+      <a class="btn" href="#">Discover</a>
+    </section>
+    <section class="grid">
+      <article class="tile">
+        <h2>Focus on Elegance</h2>
+        <p>Rounded shapes, subtle blur, and warm metallic accents create a timeless feel.</p>
+      </article>
+      <article class="tile">
+        <h2>Zero Dependencies</h2>
+        <p>No frameworks, icons, or external assets. Simple files you can drop anywhere.</p>
+      </article>
+      <article class="tile">
+        <h2>Responsive by Nature</h2>
+        <p>The dock adapts to small screens, with a clean tap target for the submenu.</p>
+      </article>
+    </section>
+  </main>
+
+  <nav class="dock" aria-label="Primary">
+    <a class="dock-logo" href="#" aria-label="Brand"><span>M</span></a>
+    <a class="dock-link active" href="#">Home</a>
+    <a class="dock-link" href="#">Gallery</a>
+    <a class="dock-link" href="#">Shop</a>
+    <div class="dock-more">
+      <input type="checkbox" id="more-toggle" class="more-toggle" aria-hidden="true" />
+      <label for="more-toggle" class="dock-link more-label" aria-controls="more-menu">More</label>
+      <ul id="more-menu" class="submenu" role="menu">
+        <li role="none"><a role="menuitem" href="#">About</a></li>
+        <li role="none"><a role="menuitem" href="#">Blog</a></li>
+        <li role="none"><a role="menuitem" href="#">Contact</a></li>
+      </ul>
+    </div>
+    <a class="dock-cta" href="#">Join</a>
+  </nav>
+</body>
+</html>
